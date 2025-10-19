@@ -4,16 +4,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movimiento")]
-    public float runSpeed = 4.2f;          // Velocidad base (m/s)
-    public float maxSpeed = 5.6f;          // Velocidad maxima
-    public float acceleration = 0.05f;     // Aceleracion por nivel o distancia
+    public float runSpeed = 4.2f;       // Velocidad inicial
+    public float maxSpeed = 5.6f;       // Velocidad maxima
+    public float acceleration = 0.25f;  // Incremento gradual por segundo
+
+    private float currentSpeed;         // Velocidad real actual
 
     [Header("Salto")]
-    public float jumpForce = 9.6f;         // Fuerza base del salto
-    public float holdForce = 5.0f;         // Fuerza adicional mientras se mantiene el toque
-    public float maxHoldTime = 0.22f;      // Tiempo maximo de salto prolongado
-    public float coyoteTime = 0.10f;       // Tiempo de gracia despues de dejar el suelo
-    public float jumpBufferTime = 0.10f;   // Tiempo de buffer antes de aterrizar
+    public float jumpForce = 9.6f;
+    public float holdForce = 5.0f;
+    public float maxHoldTime = 0.22f;
+    public float coyoteTime = 0.10f;
+    public float jumpBufferTime = 0.10f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -27,59 +29,88 @@ public class PlayerController : MonoBehaviour
     public float checkRadius = 0.1f;
     public LayerMask groundLayer;
 
+    [Header("Distancia")]
+    public RunDistance runDistance;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentSpeed = runSpeed; // inicia en velocidad base
+        if (runDistance != null)
+            runDistance.SetSpeed(currentSpeed);
     }
 
     void Update()
     {
-        // Auto-run con aceleracion progresiva
-        if (rb.linearVelocity.x < maxSpeed)
-            rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocity.x, runSpeed, acceleration), rb.linearVelocity.y);
+        // Aumentar gradualmente la velocidad hasta el maximo
+        if (currentSpeed < maxSpeed)
+        {
+            currentSpeed += acceleration * Time.deltaTime;
+            currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
+        }
+
+        // Aplicar movimiento horizontal constante
+        rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
+
+        // Actualizar velocidad en el sistema de distancia
+        if (runDistance != null)
+            runDistance.SetSpeed(currentSpeed);
 
         // Comprobar suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
 
-        // Contadores de coyote time y buffer
+        // Control de coyote time y buffer
         if (isGrounded)
             coyoteCounter = coyoteTime;
         else
             coyoteCounter -= Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             bufferCounter = jumpBufferTime;
         else
             bufferCounter -= Time.deltaTime;
 
-        // Iniciar salto si se cumplen condiciones
+        // Salto
         if (bufferCounter > 0 && coyoteCounter > 0)
         {
             Jump();
             bufferCounter = 0;
         }
 
-        // Mantener toque para salto prolongado
-        if (isHoldingJump)
+        // Salto prolongado
+        if (isHoldingJump && holdCounter > 0)
         {
-            if (holdCounter > 0)
-            {
-                rb.AddForce(Vector2.up * holdForce, ForceMode2D.Force);
-                holdCounter -= Time.deltaTime;
-            }
+            rb.AddForce(Vector2.up * holdForce, ForceMode2D.Force);
+            holdCounter -= Time.deltaTime;
         }
 
-        // Detectar toque largo
+        // Fin de salto prolongado
         if (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
             isHoldingJump = false;
     }
 
     void Jump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Reinicia velocidad Y
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         holdCounter = maxHoldTime;
         isHoldingJump = true;
         coyoteCounter = 0;
     }
+
+    public void ResetVerticalVelocity()
+    {
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+    }
+
+    public void SetControlEnabled(bool enabledControl)
+    {
+        // Deshabilitar el script pausa el auto-run y la lógica de salto
+        this.enabled = enabledControl;
+        if (!enabledControl && rb != null)
+            rb.linearVelocity = Vector2.zero;
+    }
+
 }
+

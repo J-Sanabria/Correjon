@@ -70,7 +70,7 @@ public class MenuUIManager : MonoBehaviour
     public void OnOpenVideo() => ShowOnlyOption(OP_Video);
     public void OnOpenAudio() => ShowOnlyOption(OP_Audio);
 
-    // === Botones comunes de "Volver" ===
+    // === Botones comunes de "Volver" ===+
     public void OnBackToMenu() => ShowOnly(panelMenu);
 
     // === Confirmación de salida ===
