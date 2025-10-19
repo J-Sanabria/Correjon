@@ -12,7 +12,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Pickups
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Pickups
+    uniqueID: 2944358403
+    locked: 0
+  - name: Ground
+    uniqueID: 536801601
     locked: 0
   m_RenderingLayers:
   - Default

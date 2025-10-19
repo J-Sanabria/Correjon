@@ -1,31 +1,23 @@
 using UnityEngine;
 
-public class HazardSpawner : MonoBehaviour
+public class CoinSpawner : MonoBehaviour
 {
     [Header("Refs")]
-    public Transform target;
-    public GameObject hazardPrefab;
+    public Transform target;        // jugador o cámara
+    public GameObject coinPrefab;   // prefab con CoinPickup
     public GroundSpawner ground;
-    public Camera cam; // si es null usa Camera.main
+    public Camera cam;              // si es null usa Camera.main
 
     [Header("Spawn")]
-    public float minInterval = 2.5f;
-    public float maxInterval = 4.5f;
+    public float minInterval = 1.5f;
+    public float maxInterval = 3.0f;
+    public float minAheadFromPlayer = 8f;
+    public float maxAheadFromPlayer = 16f;
+    public float offscreenPadding = 2.0f;
+    public float edgeSafety = 0.35f;
+    public float spawnYOffset = 0.8f;
 
-    // distancia minima delante del jugador (ademas de salir fuera de camara)
-    public float minAheadFromPlayer = 10f;
-    public float maxAheadFromPlayer = 18f;
-
-    // debe spawnear fuera del borde derecho de camara (para no "aparecer")
-    public float offscreenPadding = 2f;
-
-    // seguridad respecto a los bordes del bloque solido
-    public float edgeSafety = 0.4f;
-
-    // altura extra sobre el piso
-    public float spawnYOffset = 0.5f;
-
-    [Header("Limpiar atras")]
+    [Header("Cleanup")]
     public float cullBehindDistance = 40f;
 
     private float nextSpawnTime;
@@ -38,7 +30,7 @@ public class HazardSpawner : MonoBehaviour
 
     void Update()
     {
-        if (target == null || hazardPrefab == null || ground == null) return;
+        if (!target || !coinPrefab || !ground) return;
 
         if (Time.time >= nextSpawnTime)
         {
@@ -46,41 +38,29 @@ public class HazardSpawner : MonoBehaviour
             ScheduleNext();
         }
 
-        // limpieza atras
         foreach (Transform child in transform)
         {
             if (child.position.x < target.position.x - cullBehindDistance)
                 Destroy(child.gameObject);
         }
     }
-
     void TrySpawnSafe()
     {
-        // punto de partida: delante del jugador
         float desiredX = target.position.x + Random.Range(minAheadFromPlayer, maxAheadFromPlayer);
-
-        // tambien debe estar fuera de camara a la derecha
         float camRight = GetCameraRightWorldX();
         desiredX = Mathf.Max(desiredX, camRight + offscreenPadding);
 
-        // buscar un bloque solido que empiece en o despues de desiredX y que sea suficientemente ancho
         if (!FindSolidSegmentAtOrAfterX(desiredX, edgeSafety, out Bounds seg))
-            return; // no hay segmento adecuado -> no spawnea
+            return;
 
-        // elegir X dentro del bloque, lejos de bordes
         float minX = seg.min.x + edgeSafety;
         float maxX = seg.max.x - edgeSafety;
-
-        // si el desiredX cae fuera de ese rango, clampear
-        float spawnX = Mathf.Clamp(desiredX, minX, maxX);
-
-        // si aun asi el bloque quedo demasiado fino, abortar
         if (maxX <= minX) return;
 
+        float spawnX = Random.Range(minX, maxX);
         Vector3 pos = new Vector3(spawnX, seg.max.y + spawnYOffset, 0f);
-        var go = Instantiate(hazardPrefab, pos, Quaternion.identity, transform);
 
-        var hz = go.GetComponent<Hazard>();
+        var go = Instantiate(coinPrefab, pos, Quaternion.identity, transform);
 
     }
 
@@ -88,14 +68,10 @@ public class HazardSpawner : MonoBehaviour
     {
         if (!cam) cam = Camera.main;
         if (!cam) return target ? target.position.x : 0f;
-
-        // convertir viewport (1,0.5) a mundo
         Vector3 right = cam.ViewportToWorldPoint(new Vector3(1f, 0.5f, Mathf.Abs(cam.transform.position.z)));
         return right.x;
     }
 
-    // busca el primer bloque solido cuyo bounds contenga desiredX o venga despues,
-    // y que tenga ancho util mayor que 2*edgeSafety
     bool FindSolidSegmentAtOrAfterX(float desiredX, float safety, out Bounds result)
     {
         result = new Bounds();
@@ -105,30 +81,24 @@ public class HazardSpawner : MonoBehaviour
         foreach (Transform child in ground.transform)
         {
             var col = child.GetComponent<Collider2D>();
-            if (col == null || !col.enabled) continue; // ignorar vacios
+            if (col == null || !col.enabled) continue;
 
             Bounds b = col.bounds;
-
-            // si el segmento ya quedo atras, ignorar
             if (b.max.x < desiredX) continue;
 
-            // preferir el primer bloque cuyo rango [min, max] incluya desiredX;
-            // si no, tomar el bloque mas cercano por delante
             bool contains = desiredX >= b.min.x && desiredX <= b.max.x;
             bool ahead = b.min.x >= desiredX;
 
             if (contains)
             {
-                // validar ancho util
                 if (b.size.x >= safety * 2f)
                 {
                     result = b;
-                    return true; // mejor caso
+                    return true;
                 }
             }
             else if (ahead)
             {
-                // candidato por delante; elegir el mas cercano
                 if (b.min.x < bestStart && b.size.x >= safety * 2f)
                 {
                     bestStart = b.min.x;
@@ -137,7 +107,6 @@ public class HazardSpawner : MonoBehaviour
                 }
             }
         }
-
         return found;
     }
 

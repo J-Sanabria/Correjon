@@ -15,6 +15,9 @@ public class GameHUD : MonoBehaviour
     [Header("UI - Distancia")]
     [SerializeField] TextMeshProUGUI distanceText;  // Cambiado
 
+    [Header("UI - Monedas")]
+    [SerializeField] CurrencySystem currency;
+    [SerializeField] TextMeshProUGUI runCoinsText;
     void OnEnable()
     {
         if (livesSystem != null)
@@ -22,6 +25,9 @@ public class GameHUD : MonoBehaviour
 
         if (runDistance != null)
             runDistance.OnDistanceChanged.AddListener(UpdateDistance);
+        if (!currency) currency = CurrencySystem.Instance;
+        if (currency != null)
+            currency.OnRunCoinsChanged.AddListener(UpdateRunCoins);
     }
 
     void OnDisable()
@@ -30,6 +36,8 @@ public class GameHUD : MonoBehaviour
             livesSystem.OnLivesChanged.RemoveListener(UpdateLives);
         if (runDistance != null)
             runDistance.OnDistanceChanged.RemoveListener(UpdateDistance);
+        if (currency != null)
+            currency.OnRunCoinsChanged.RemoveListener(UpdateRunCoins);
     }
 
     void Start()
@@ -38,6 +46,8 @@ public class GameHUD : MonoBehaviour
             UpdateLives(livesSystem.CurrentLives, livesSystem.MaxLives);
         if (runDistance != null)
             UpdateDistance(runDistance.Distance);
+        if (!currency) currency = CurrencySystem.Instance;
+        if (currency != null) UpdateRunCoins(currency.RunCoins);
     }
 
     // === VIDAS ===
@@ -68,5 +78,10 @@ public class GameHUD : MonoBehaviour
     {
         if (distanceText != null)
             distanceText.text = $"Distancia: {meters:0.0} m";
+    }
+    void UpdateRunCoins(int value)
+    {
+        if (runCoinsText != null)
+            runCoinsText.text = $"x{value}";
     }
 }
