@@ -1,41 +1,14 @@
+// CoinPickup.cs
 using UnityEngine;
 
 public class CoinPickup : MonoBehaviour
 {
-    public int coinAmount = 1;
-
-    [Header("Anim (opcional)")]
-    public Animator animator;
-    public string collectTrigger = "Collect";
-
-    Collider2D hitbox;
-    bool collected;
-
-    void Awake()
-    {
-        hitbox = GetComponent<Collider2D>();
-        if (!animator) animator = GetComponent<Animator>();
-    }
+    public int amount = 1;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (collected) return;
-        if (!other.CompareTag("Player")) return;   // opcional
-
-        var currency = CurrencySystem.Instance;
-        if (currency == null) return;
-
-        currency.AddCoins(coinAmount, addToWallet: true, addToRun: true);
-
-        collected = true;
-        if (hitbox) hitbox.enabled = false;
-        if (animator && !string.IsNullOrEmpty(collectTrigger))
-            animator.SetTrigger(collectTrigger);
+        if (!other.CompareTag("Player")) return;
+        CurrencySystem.Instance?.AddRunCoins(amount);
         Destroy(gameObject);
-    }
-
-    void OnBecameInvisible()
-    {
-        if (collected) Destroy(gameObject);
     }
 }

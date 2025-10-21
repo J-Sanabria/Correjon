@@ -1,6 +1,6 @@
-// LivesSystem.cs
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 
@@ -14,20 +14,15 @@ public class LivesSystem : MonoBehaviour
     [SerializeField] bool persistAcrossScenes = true;
     [SerializeField] float invulnerabilitySeconds = 1.0f;
 
-    [Header("UI (opcional directo)")]
-    [SerializeField] GameOverPanel gameOverPanel; // <-- arrástralo en el Inspector
-
     public int MaxLives => maxLives;
     public int CurrentLives { get; private set; }
     public bool IsInvulnerable { get; private set; }
 
-    public UnityEvent<int, int> OnLivesChanged = new UnityEvent<int, int>();
+    public UnityEvent<int,int> OnLivesChanged = new UnityEvent<int,int>();
     public UnityEvent<bool> OnInvulnerabilityChanged = new UnityEvent<bool>();
-
     public event Action OnGameOver;
 
-    private bool gameOverFired = false;
-    public bool HasGameOver => gameOverFired; // <-- “sticky” para late subscribers
+    bool gameOverFired;
 
     void Awake()
     {
@@ -38,6 +33,16 @@ public class LivesSystem : MonoBehaviour
         CurrentLives = Mathf.Clamp(startLives, 0, maxLives);
         gameOverFired = (CurrentLives <= 0);
         OnLivesChanged.Invoke(CurrentLives, MaxLives);
+    }
+
+    void OnEnable()  { SceneManager.sceneLoaded += OnSceneLoaded; }
+    void OnDisable() { SceneManager.sceneLoaded -= OnSceneLoaded; }
+
+    // Cada vez que entras a la escena de juego, resetea estado de carrera
+    void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
+        // si quieres filtrar por escena: if (s.name != "GameScene") return;
+        ResetLives();
     }
 
     public void AddLife(int amount = 1)
@@ -57,37 +62,35 @@ public class LivesSystem : MonoBehaviour
 
         if (CurrentLives <= 0)
         {
-            // Marca primero para evitar reentradas
-            gameOverFired = true;
-
-            // 1) Llamada directa al panel (si está asignado)
-            if (gameOverPanel != null)
-                gameOverPanel.Show();
-
-            // 2) Y si alguien sigue el evento por código, también lo notificamos
-            OnGameOver?.Invoke();
+            if (!gameOverFired)
+            {
+                gameOverFired = true;
+                OnGameOver?.Invoke();
+            }
             return;
         }
 
         if (invulnerabilitySeconds > 0f)
-            StartCoroutine(InvulnerabilityRoutine(invulnerabilitySeconds));
+            StartCoroutine(InvulRoutine(invulnerabilitySeconds));
     }
 
     public void ResetLives()
     {
-        CurrentLives = Mathf.Clamp(startLives, 0, MaxLives);
-        gameOverFired = (CurrentLives <= 0);
+        StopAllCoroutines(); // corta parpadeos antiguos
         IsInvulnerable = false;
+        gameOverFired = false;
+
+        CurrentLives = Mathf.Clamp(startLives, 0, MaxLives);
         OnInvulnerabilityChanged.Invoke(false);
         OnLivesChanged.Invoke(CurrentLives, MaxLives);
     }
 
-    IEnumerator InvulnerabilityRoutine(float seconds)
+    IEnumerator InvulRoutine(float sec)
     {
         IsInvulnerable = true;
         OnInvulnerabilityChanged.Invoke(true);
         float t = 0f;
-        while (t < seconds) { t += Time.unscaledDeltaTime; yield return null; }
+        while (t < sec) { t += Time.unscaledDeltaTime; yield return null; }
         IsInvulnerable = false;
         OnInvulnerabilityChanged.Invoke(false);
     }

@@ -1,59 +1,75 @@
+// CurrencySystem.cs
 using UnityEngine;
 using UnityEngine.Events;
-
-[System.Serializable] public class IntEvent : UnityEvent<int> { }
+using UnityEngine.SceneManagement;
 
 public class CurrencySystem : MonoBehaviour
 {
     public static CurrencySystem Instance { get; private set; }
 
     [SerializeField] bool persistAcrossScenes = true;
-    [SerializeField] string walletKey = "WALLET_COINS";
 
-    public int Wallet { get; private set; }
-    public int RunCoins { get; private set; }
+    public int Wallet => SaveManager.Data.wallet; // persistente
+    public int RunCoins { get; private set; }     // por carrera
 
-    public IntEvent OnWalletChanged;
-    public IntEvent OnRunCoinsChanged;
+    public UnityEvent<int> OnWalletChanged = new UnityEvent<int>();
+    public UnityEvent<int> OnRunCoinsChanged = new UnityEvent<int>();
+
+    bool bankedThisRun = false;
 
     void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-
         if (persistAcrossScenes) DontDestroyOnLoad(gameObject);
 
-        Wallet = PlayerPrefs.GetInt(walletKey, 0);
-        OnWalletChanged?.Invoke(Wallet);
-        OnRunCoinsChanged?.Invoke(RunCoins);
+        // Asegura que el save esté cargado
+        if (SaveManager.Data == null || SaveManager.Data.wallet == 0 && SaveManager.Data.journalLeaves == 0)
+            SaveManager.Load();
+
+        OnWalletChanged.Invoke(Wallet);
+        OnRunCoinsChanged.Invoke(RunCoins);
     }
 
-    public void AddCoins(int amount, bool addToWallet = true, bool addToRun = true)
+    void OnEnable() => SceneManager.sceneLoaded += OnSceneLoaded;
+    void OnDisable() => SceneManager.sceneLoaded -= OnSceneLoaded;
+
+    void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
+        // Cada carrera empieza limpia (esto evita romper "Reintentar")
+        RunCoins = 0;
+        bankedThisRun = false;
+        OnRunCoinsChanged.Invoke(RunCoins);
+    }
+
+    public void AddRunCoins(int amount)
     {
         if (amount <= 0) return;
-
-        if (addToWallet)
-        {
-            Wallet += amount;
-            PlayerPrefs.SetInt(walletKey, Wallet);
-            PlayerPrefs.Save();
-            OnWalletChanged?.Invoke(Wallet);
-        }
-
-        if (addToRun)
-        {
-            RunCoins += amount;
-            OnRunCoinsChanged?.Invoke(RunCoins);
-        }
+        RunCoins += amount;
+        OnRunCoinsChanged.Invoke(RunCoins);
     }
 
-    public void ResetRunCoins()
+    // Abonar las monedas de la carrera al total (solo una vez por carrera)
+    public void BankRunCoinsOnce()
     {
-        RunCoins = 0;
-        OnRunCoinsChanged?.Invoke(RunCoins);
+        if (bankedThisRun) return;
+        if (RunCoins > 0)
+        {
+            SaveManager.Data.wallet += RunCoins;
+            SaveManager.Save();
+            OnWalletChanged.Invoke(Wallet);
+            RunCoins = 0;
+            OnRunCoinsChanged.Invoke(RunCoins);
+        }
+        bankedThisRun = true;
+    }
+
+    public bool Spend(int cost)
+    {
+        if (cost < 0 || cost > Wallet) return false;
+        SaveManager.Data.wallet -= cost;
+        SaveManager.Save();
+        OnWalletChanged.Invoke(Wallet);
+        return true;
     }
 }

@@ -42,11 +42,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG_Back
+    uniqueID: 801650151
+    locked: 0
+  - name: BG_Mid
+    uniqueID: 3118499639
+    locked: 0
+  - name: BG_Front
+    uniqueID: 959669927
+    locked: 0
+  - name: Transition
+    uniqueID: 1967208813
+    locked: 0
+  - name: Player
+    uniqueID: 2029766229
+    locked: 0
   - name: Pickups
     uniqueID: 2944358403
     locked: 0
   - name: Ground
     uniqueID: 536801601
+    locked: 0
+  - name: UI
+    uniqueID: 4103846405
     locked: 0
   m_RenderingLayers:
   - Default
