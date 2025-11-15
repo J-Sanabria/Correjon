@@ -4,11 +4,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movimiento")]
-    public float runSpeed = 4.2f;       // Velocidad inicial
-    public float maxSpeed = 5.6f;       // Velocidad maxima
-    public float acceleration = 0.25f;  // Incremento gradual por segundo
+    public float runSpeed = 4.2f;
+    public float maxSpeed = 5.6f;
+    public float acceleration = 0.25f;
 
-    private float currentSpeed;         // Velocidad real actual
+    private float currentSpeed;
 
     [Header("Salto")]
     public float jumpForce = 9.6f;
@@ -32,64 +32,67 @@ public class PlayerController : MonoBehaviour
     [Header("Distancia")]
     public RunDistance runDistance;
 
+    [Header("Animacion")]
     public Animator Personaje;
+
+    private readonly int hashIsGrounded = Animator.StringToHash("IsGrounded");
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentSpeed = runSpeed; // inicia en velocidad base
+        if (!Personaje) Personaje = GetComponent<Animator>();
+
+        currentSpeed = runSpeed;
         if (runDistance != null)
             runDistance.SetSpeed(currentSpeed);
-        MusicManager.Instance.PlayGameplayMusic();
 
+        MusicManager.Instance.PlayGameplayMusic();
     }
 
     void Update()
     {
-        // Aumentar gradualmente la velocidad hasta el maximo
         if (currentSpeed < maxSpeed)
         {
             currentSpeed += acceleration * Time.deltaTime;
             currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
         }
 
-        // Aplicar movimiento horizontal constante
         rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
 
-        // Actualizar velocidad en el sistema de distancia
         if (runDistance != null)
             runDistance.SetSpeed(currentSpeed);
 
-        // Comprobar suelo
+        // detección de suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
 
-        // Control de coyote time y buffer
+        if (Personaje)
+            Personaje.SetBool(hashIsGrounded, isGrounded);
+
         if (isGrounded)
             coyoteCounter = coyoteTime;
         else
             coyoteCounter -= Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+        if (Input.GetMouseButtonDown(0) ||
+            (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             bufferCounter = jumpBufferTime;
         else
             bufferCounter -= Time.deltaTime;
 
-        // Salto
         if (bufferCounter > 0 && coyoteCounter > 0)
         {
             Jump();
             bufferCounter = 0;
         }
 
-        // Salto prolongado
         if (isHoldingJump && holdCounter > 0)
         {
             rb.AddForce(Vector2.up * holdForce, ForceMode2D.Force);
             holdCounter -= Time.deltaTime;
         }
 
-        // Fin de salto prolongado
-        if (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
+        if (Input.GetMouseButtonUp(0) ||
+            (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
             isHoldingJump = false;
     }
 
@@ -110,11 +113,15 @@ public class PlayerController : MonoBehaviour
 
     public void SetControlEnabled(bool enabledControl)
     {
-        // Deshabilitar el script pausa el auto-run y la lógica de salto
         this.enabled = enabledControl;
         if (!enabledControl && rb != null)
             rb.linearVelocity = Vector2.zero;
     }
 
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+        Gizmos.color = isGrounded ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
 }
-

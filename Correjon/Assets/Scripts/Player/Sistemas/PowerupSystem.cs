@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public enum PowerupType
@@ -55,6 +54,8 @@ public class PowerupSystem : MonoBehaviour
 
     private PowerupType activePower = PowerupType.None;
     private Coroutine currentRoutine;
+    private Coroutine panelRoutine; // <- NUEVO
+
 
     // --------------------------------------------------------------
     // Inicialización
@@ -283,7 +284,7 @@ public class PowerupSystem : MonoBehaviour
         powerupPanel.SetActive(true);
 
         if (powerupCanvasGroup)
-            powerupCanvasGroup.alpha = 1f;
+            powerupCanvasGroup.alpha = 0f; // empieza invisible
 
         if (animalAnimator)
         {
@@ -302,25 +303,88 @@ public class PowerupSystem : MonoBehaviour
 
         if (fondoAnimator)
         {
-            fondoAnimator.ResetTrigger("PlayFondoDanta");
-            fondoAnimator.ResetTrigger("PlayFondoVenado");
-            fondoAnimator.ResetTrigger("PlayFondoCondor");
+            fondoAnimator.ResetTrigger("ShowFondoDanta");
+            fondoAnimator.ResetTrigger("ShowFondoVenado");
+            fondoAnimator.ResetTrigger("ShowFondoCondor");
 
             switch (type)
             {
-                case PowerupType.Danta: fondoAnimator.SetTrigger("PlayFondoDanta"); break;
-                case PowerupType.Venado: fondoAnimator.SetTrigger("PlayFondoVenado"); break;
-                case PowerupType.Condor: fondoAnimator.SetTrigger("PlayFondoCondor"); break;
+                case PowerupType.Danta: fondoAnimator.SetTrigger("ShowFondoDanta"); break;
+                case PowerupType.Venado: fondoAnimator.SetTrigger("ShowFondoVenado"); break;
+                case PowerupType.Condor: fondoAnimator.SetTrigger("ShowFondoCondor"); break;
             }
 
          }
-         StopCoroutine(nameof(HidePanelAfterDelay));
-        StartCoroutine(HidePanelAfterDelay());
+
+        if (pauseOnPowerupSeconds > 0f)
+            StartCoroutine(SoftPauseRoutine());
+
+        if (panelRoutine != null)
+            StopCoroutine(panelRoutine);
+        panelRoutine = StartCoroutine(PanelFadeRoutine());
 
 
     }
+    IEnumerator PanelFadeRoutine()
+    {
+        if (powerupCanvasGroup == null)
+            yield break;
 
-  
+        // Fade IN
+        float t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            float normalized = Mathf.Clamp01(t / fadeDuration);
+            powerupCanvasGroup.alpha = Mathf.Lerp(0f, 1f, normalized);
+            yield return null;
+        }
+        powerupCanvasGroup.alpha = 1f;
+
+        // Permanecer visible panelDisplayTime (tiempo real)
+        float hold = 0f;
+        while (hold < panelDisplayTime)
+        {
+            hold += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        // Fade OUT
+        t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            float normalized = Mathf.Clamp01(t / fadeDuration);
+            powerupCanvasGroup.alpha = Mathf.Lerp(1f, 0f, normalized);
+            yield return null;
+        }
+        powerupCanvasGroup.alpha = 0f;
+
+        if (powerupPanel)
+            powerupPanel.SetActive(false);
+
+        panelRoutine = null;
+    }
+
+    // >>> Pausa "suave" usando tiempo NO escalado
+    IEnumerator SoftPauseRoutine()
+    {
+        float previousScale = Time.timeScale;
+        Time.timeScale = 0f;
+
+        float t = 0f;
+        while (t < pauseOnPowerupSeconds)
+        {
+            t += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        // Solo reanuda si nadie más cambió el timeScale mientras tanto
+        if (Mathf.Approximately(Time.timeScale, 0f))
+            Time.timeScale = previousScale;
+    }
+
+
     IEnumerator HidePanelAfterDelay()
     {
         yield return new WaitForSeconds(panelDisplayTime);

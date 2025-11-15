@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: ccb6cb6b4bc6d104b8443a7a07e336c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7500460160930135061
+    second: condorFondo_00054_0
+  - first:
+      213: -8386720869871252896
+    second: condorFondo_00054_1
+  - first:
+      213: 7359160226943940366
+    second: condorFondo_00054_2
+  - first:
+      213: 8645922293383151450
+    second: condorFondo_00054_3
+  - first:
+      213: -4330023816778129648
+    second: condorFondo_00054_4
+  - first:
+      213: -6552793223741779785
+    second: condorFondo_00054_5
+  - first:
+      213: -2872927269227683195
+    second: condorFondo_00054_6
+  - first:
+      213: -6084084949702968616
+    second: condorFondo_00054_7
+  - first:
+      213: 695379954017052727
+    second: condorFondo_00054_8
+  - first:
+      213: -695130315426689721
+    second: condorFondo_00054_9
+  - first:
+      213: 2394155358866356369
+    second: condorFondo_00054_10
+  - first:
+      213: -6830666735220380845
+    second: condorFondo_00054_11
+  - first:
+      213: 6021547679635704380
+    second: condorFondo_00054_12
+  - first:
+      213: 7019648432375131499
+    second: condorFondo_00054_13
+  - first:
+      213: -5487158587755210539
+    second: condorFondo_00054_14
+  - first:
+      213: -6868830399385410172
+    second: condorFondo_00054_15
+  - first:
+      213: 3146440038425976689
+    second: condorFondo_00054_16
+  - first:
+      213: -2476841997872627250
+    second: condorFondo_00054_17
+  - first:
+      213: 8836522223150939589
+    second: condorFondo_00054_18
+  - first:
+      213: -4216761040987011511
+    second: condorFondo_00054_19
+  - first:
+      213: -7620419923722799738
+    second: condorFondo_00054_20
+  - first:
+      213: 8464933130964969118
+    second: condorFondo_00054_21
+  - first:
+      213: -2149880219419798582
+    second: condorFondo_00054_22
+  - first:
+      213: -9038840325786774550
+    second: condorFondo_00054_23
+  - first:
+      213: 5623479394317732236
+    second: condorFondo_00054_24
+  - first:
+      213: -1403814728771337629
+    second: condorFondo_00054_25
+  - first:
+      213: -1448735853521575601
+    second: condorFondo_00054_26
+  - first:
+      213: 5101626012300673911
+    second: condorFondo_00054_27
+  - first:
+      213: -6254869787446742667
+    second: condorFondo_00054_28
+  - first:
+      213: 267182916076238521
+    second: condorFondo_00054_29
+  - first:
+      213: 1028391936267585921
+    second: condorFondo_00054_30
+  - first:
+      213: -4680216993541026213
+    second: condorFondo_00054_31
+  - first:
+      213: 203272528756459469
+    second: condorFondo_00054_32
+  - first:
+      213: -1849466111388027581
+    second: condorFondo_00054_33
+  - first:
+      213: -8156850154142539616
+    second: condorFondo_00054_34
+  - first:
+      213: 2500846867196406738
+    second: condorFondo_00054_35
+  - first:
+      213: -7500533559539064353
+    second: condorFondo_00054_36
+  - first:
+      213: -2145780925481008908
+    second: condorFondo_00054_37
+  - first:
+      213: 1200673884648174172
+    second: condorFondo_00054_38
+  - first:
+      213: -1147705998903635492
+    second: condorFondo_00054_39
+  - first:
+      213: -3122392036254563590
+    second: condorFondo_00054_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: condorFondo_00054_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 968
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cb538f6ccf61860800000000000000
+      internalID: 7500460160930135061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 991
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a08f8bdc16c9b80800000000000000
+      internalID: -8386720869871252896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 902
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e073d246c3df02660800000000000000
+      internalID: 7359160226943940366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 869
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fbbbc848c7cf770800000000000000
+      internalID: 8645922293383151450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 756
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f55f3b74aa8e3c0800000000000000
+      internalID: -4330023816778129648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 791
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0d84cf74dcf05a0800000000000000
+      internalID: -6552793223741779785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_6
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 810
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582a62cbedf4128d0800000000000000
+      internalID: -2872927269227683195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 756
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da77ad19fcf09ba0800000000000000
+      internalID: -6084084949702968616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_8
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 723
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7382d17426c76a900800000000000000
+      internalID: 695379954017052727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_9
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 747
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d036c39a66a56f0800000000000000
+      internalID: -695130315426689721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 680
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198b3563d9fb93120800000000000000
+      internalID: 2394155358866356369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 639
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bac147bc89431a0800000000000000
+      internalID: -6830666735220380845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 662
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a83ca06b5d09350800000000000000
+      internalID: 6021547679635704380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 593
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6de8dbbe0dca6160800000000000000
+      internalID: 7019648432375131499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 588
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8dd9e2652b9d3b0800000000000000
+      internalID: -5487158587755210539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_15
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 558
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4856a36f4230da0a0800000000000000
+      internalID: -6868830399385410172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 536
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f527d5b866aab20800000000000000
+      internalID: 3146440038425976689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 545
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec18808635d70add0800000000000000
+      internalID: -2476841997872627250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 455
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdb1c0e422a1aa70800000000000000
+      internalID: 8836522223150939589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 453
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9464341bc2e0b75c0800000000000000
+      internalID: -4216761040987011511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_20
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 467
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685713f3474de3690800000000000000
+      internalID: -7620419923722799738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_21
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 406
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e962a9e55db797570800000000000000
+      internalID: 8464933130964969118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_22
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 443
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac318dbb4571a22e0800000000000000
+      internalID: -2149880219419798582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 361
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3d0001d969f8280800000000000000
+      internalID: -9038840325786774550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_24
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 352
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c898904f6bc9a0e40800000000000000
+      internalID: 5623479394317732236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_25
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 324
+        width: 115
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3628f1121f5a48ce0800000000000000
+      internalID: -1403814728771337629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_26
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 371
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41697dba6e05ebe0800000000000000
+      internalID: -1448735853521575601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 309
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773031024dd9cc640800000000000000
+      internalID: 5101626012300673911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 308
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571f9ea611d3239a0800000000000000
+      internalID: -6254869787446742667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_29
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 278
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6f6c2527935b300800000000000000
+      internalID: 267182916076238521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_30
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 255
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1890b137405954e00800000000000000
+      internalID: 1028391936267585921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_31
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 220
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e8d34f0778c0fb0800000000000000
+      internalID: -4680216993541026213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_32
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 158
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7cf15b94b22d200800000000000000
+      internalID: 203272528756459469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345f79ede506556e0800000000000000
+      internalID: -1849466111388027581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_34
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 40
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a06e3c600c0dce80800000000000000
+      internalID: -8156850154142539616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_35
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 70
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbe3e4c9fac4b220800000000000000
+      internalID: 2500846867196406738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_36
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 41
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd127c59770c8e790800000000000000
+      internalID: -7500533559539064353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f045eafd97a832e0800000000000000
+      internalID: -2145780925481008908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_38
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52fa816986a9a010800000000000000
+      internalID: 1200673884648174172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_39
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 5
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd193cc89778210f0800000000000000
+      internalID: -1147705998903635492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condorFondo_00054_40
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2c9857cf80ba4d0800000000000000
+      internalID: -3122392036254563590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      condorFondo_00054_0: 7500460160930135061
+      condorFondo_00054_1: -8386720869871252896
+      condorFondo_00054_10: 2394155358866356369
+      condorFondo_00054_11: -6830666735220380845
+      condorFondo_00054_12: 6021547679635704380
+      condorFondo_00054_13: 7019648432375131499
+      condorFondo_00054_14: -5487158587755210539
+      condorFondo_00054_15: -6868830399385410172
+      condorFondo_00054_16: 3146440038425976689
+      condorFondo_00054_17: -2476841997872627250
+      condorFondo_00054_18: 8836522223150939589
+      condorFondo_00054_19: -4216761040987011511
+      condorFondo_00054_2: 7359160226943940366
+      condorFondo_00054_20: -7620419923722799738
+      condorFondo_00054_21: 8464933130964969118
+      condorFondo_00054_22: -2149880219419798582
+      condorFondo_00054_23: -9038840325786774550
+      condorFondo_00054_24: 5623479394317732236
+      condorFondo_00054_25: -1403814728771337629
+      condorFondo_00054_26: -1448735853521575601
+      condorFondo_00054_27: 5101626012300673911
+      condorFondo_00054_28: -6254869787446742667
+      condorFondo_00054_29: 267182916076238521
+      condorFondo_00054_3: 8645922293383151450
+      condorFondo_00054_30: 1028391936267585921
+      condorFondo_00054_31: -4680216993541026213
+      condorFondo_00054_32: 203272528756459469
+      condorFondo_00054_33: -1849466111388027581
+      condorFondo_00054_34: -8156850154142539616
+      condorFondo_00054_35: 2500846867196406738
+      condorFondo_00054_36: -7500533559539064353
+      condorFondo_00054_37: -2145780925481008908
+      condorFondo_00054_38: 1200673884648174172
+      condorFondo_00054_39: -1147705998903635492
+      condorFondo_00054_4: -4330023816778129648
+      condorFondo_00054_40: -3122392036254563590
+      condorFondo_00054_5: -6552793223741779785
+      condorFondo_00054_6: -2872927269227683195
+      condorFondo_00054_7: -6084084949702968616
+      condorFondo_00054_8: 695379954017052727
+      condorFondo_00054_9: -695130315426689721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

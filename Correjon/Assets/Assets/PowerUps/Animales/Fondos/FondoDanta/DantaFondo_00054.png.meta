@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 2a44368c9b472e34fae86558180905b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 920074620491124263
+    second: DantaFondo_00054_0
+  - first:
+      213: 3093021026167217976
+    second: DantaFondo_00054_1
+  - first:
+      213: 5242094358045251586
+    second: DantaFondo_00054_2
+  - first:
+      213: 6604220673350957692
+    second: DantaFondo_00054_3
+  - first:
+      213: 3009210808706737194
+    second: DantaFondo_00054_4
+  - first:
+      213: 7129883300389769620
+    second: DantaFondo_00054_5
+  - first:
+      213: -6579719680428410116
+    second: DantaFondo_00054_6
+  - first:
+      213: -2372203781678545257
+    second: DantaFondo_00054_7
+  - first:
+      213: -3859091636016756945
+    second: DantaFondo_00054_8
+  - first:
+      213: 2416317868618633058
+    second: DantaFondo_00054_9
+  - first:
+      213: -2651740295310216229
+    second: DantaFondo_00054_10
+  - first:
+      213: 5380901803040029917
+    second: DantaFondo_00054_11
+  - first:
+      213: -5180841905231650496
+    second: DantaFondo_00054_12
+  - first:
+      213: 6627517852398520553
+    second: DantaFondo_00054_13
+  - first:
+      213: -1656513035301890168
+    second: DantaFondo_00054_14
+  - first:
+      213: -7775110218331943650
+    second: DantaFondo_00054_15
+  - first:
+      213: 5121218362935944711
+    second: DantaFondo_00054_16
+  - first:
+      213: 1015358970083751582
+    second: DantaFondo_00054_17
+  - first:
+      213: 1417046980141386942
+    second: DantaFondo_00054_18
+  - first:
+      213: -8348235368091900843
+    second: DantaFondo_00054_19
+  - first:
+      213: 5442178259872416048
+    second: DantaFondo_00054_20
+  - first:
+      213: -4079354629460607290
+    second: DantaFondo_00054_21
+  - first:
+      213: 1434358400023679863
+    second: DantaFondo_00054_22
+  - first:
+      213: -5757071684774154592
+    second: DantaFondo_00054_23
+  - first:
+      213: -1411885046045398062
+    second: DantaFondo_00054_24
+  - first:
+      213: 3342410122396229617
+    second: DantaFondo_00054_25
+  - first:
+      213: 364856431106616119
+    second: DantaFondo_00054_26
+  - first:
+      213: -4574524109800134483
+    second: DantaFondo_00054_27
+  - first:
+      213: -8412241553371989418
+    second: DantaFondo_00054_28
+  - first:
+      213: -7104821663039824380
+    second: DantaFondo_00054_29
+  - first:
+      213: -6305913615997404543
+    second: DantaFondo_00054_30
+  - first:
+      213: -3468670959168222952
+    second: DantaFondo_00054_31
+  - first:
+      213: 739460699055195015
+    second: DantaFondo_00054_32
+  - first:
+      213: -4993186558511992579
+    second: DantaFondo_00054_33
+  - first:
+      213: -4287149741970910385
+    second: DantaFondo_00054_34
+  - first:
+      213: 3100766847852221398
+    second: DantaFondo_00054_35
+  - first:
+      213: 7832519809782737802
+    second: DantaFondo_00054_36
+  - first:
+      213: 1193971021111512095
+    second: DantaFondo_00054_37
+  - first:
+      213: 5385540169080450360
+    second: DantaFondo_00054_38
+  - first:
+      213: 9025355256567514684
+    second: DantaFondo_00054_39
+  - first:
+      213: -3985273637987915887
+    second: DantaFondo_00054_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DantaFondo_00054_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 968
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ec9391ef2c4cc00800000000000000
+      internalID: 920074620491124263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 991
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fd28b5c3e9cea20800000000000000
+      internalID: 3093021026167217976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 902
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208dd5a7b09afb840800000000000000
+      internalID: 5242094358045251586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 869
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7aff5536b7e6ab50800000000000000
+      internalID: 6604220673350957692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 756
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242b3b794dd2c920800000000000000
+      internalID: 3009210808706737194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 791
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491d8b1061f62f260800000000000000
+      internalID: 7129883300389769620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_6
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 810
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfafa6ebfc320b4a0800000000000000
+      internalID: -6579719680428410116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 756
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7964632aa3d341fd0800000000000000
+      internalID: -2372203781678545257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_8
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 723
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f274a877a90c17ac0800000000000000
+      internalID: -3859091636016756945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_9
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 747
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f417f9c4c788120800000000000000
+      internalID: 2416317868618633058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 680
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3f17d3040233bd0800000000000000
+      internalID: -2651740295310216229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 639
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcb57d3eadccaa40800000000000000
+      internalID: 5380901803040029917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 662
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041a5398cb3f918b0800000000000000
+      internalID: -5180841905231650496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 593
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e806c66f5ca9fb50800000000000000
+      internalID: 6627517852398520553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 588
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887d605cb22e209e0800000000000000
+      internalID: -1656513035301890168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_15
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 558
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d80d26372491490800000000000000
+      internalID: -7775110218331943650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 536
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706210cb7f8321740800000000000000
+      internalID: 5121218362935944711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 545
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96395b8a97471e00800000000000000
+      internalID: 1015358970083751582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 455
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc0e5978bc5aa310800000000000000
+      internalID: 1417046980141386942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 453
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554a78fd92c152c80800000000000000
+      internalID: -8348235368091900843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_20
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 467
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0318c002b40868b40800000000000000
+      internalID: 5442178259872416048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_21
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 406
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ceb72ee3983367c0800000000000000
+      internalID: -4079354629460607290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_22
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 443
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77352028d5dd7e310800000000000000
+      internalID: 1434358400023679863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 361
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aea3921ec5ca10b0800000000000000
+      internalID: -5757071684774154592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_24
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 352
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db27c6f70af76ce0800000000000000
+      internalID: -1411885046045398062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_25
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 324
+        width: 115
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ffd8172c40a26e20800000000000000
+      internalID: 3342410122396229617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_26
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 371
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b6022bdfa301500800000000000000
+      internalID: 364856431106616119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 309
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da827ea1f860480c0800000000000000
+      internalID: -4574524109800134483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 308
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a7b7e80e6b14b80800000000000000
+      internalID: -8412241553371989418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_29
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 278
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ed206275a966d90800000000000000
+      internalID: -7104821663039824380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_30
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 255
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18afc26f9f4ec78a0800000000000000
+      internalID: -6305913615997404543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_31
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 220
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8198014f32eccdfc0800000000000000
+      internalID: -3468670959168222952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_32
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 158
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7830c848697134a00800000000000000
+      internalID: 739460699055195015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df033a2b743a4bab0800000000000000
+      internalID: -4993186558511992579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_34
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 40
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f439ae2260cf084c0800000000000000
+      internalID: -4287149741970910385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_35
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 70
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d31a810503280b20800000000000000
+      internalID: 3100766847852221398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_36
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 41
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b6f4eb443b2bc60800000000000000
+      internalID: 7832519809782737802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c46795156d19010800000000000000
+      internalID: 1193971021111512095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_38
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d23adff384dba40800000000000000
+      internalID: 5385540169080450360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_39
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 5
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36496799c0804d70800000000000000
+      internalID: 9025355256567514684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DantaFondo_00054_40
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197600bbdb671b8c0800000000000000
+      internalID: -3985273637987915887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DantaFondo_00054_0: 920074620491124263
+      DantaFondo_00054_1: 3093021026167217976
+      DantaFondo_00054_10: -2651740295310216229
+      DantaFondo_00054_11: 5380901803040029917
+      DantaFondo_00054_12: -5180841905231650496
+      DantaFondo_00054_13: 6627517852398520553
+      DantaFondo_00054_14: -1656513035301890168
+      DantaFondo_00054_15: -7775110218331943650
+      DantaFondo_00054_16: 5121218362935944711
+      DantaFondo_00054_17: 1015358970083751582
+      DantaFondo_00054_18: 1417046980141386942
+      DantaFondo_00054_19: -8348235368091900843
+      DantaFondo_00054_2: 5242094358045251586
+      DantaFondo_00054_20: 5442178259872416048
+      DantaFondo_00054_21: -4079354629460607290
+      DantaFondo_00054_22: 1434358400023679863
+      DantaFondo_00054_23: -5757071684774154592
+      DantaFondo_00054_24: -1411885046045398062
+      DantaFondo_00054_25: 3342410122396229617
+      DantaFondo_00054_26: 364856431106616119
+      DantaFondo_00054_27: -4574524109800134483
+      DantaFondo_00054_28: -8412241553371989418
+      DantaFondo_00054_29: -7104821663039824380
+      DantaFondo_00054_3: 6604220673350957692
+      DantaFondo_00054_30: -6305913615997404543
+      DantaFondo_00054_31: -3468670959168222952
+      DantaFondo_00054_32: 739460699055195015
+      DantaFondo_00054_33: -4993186558511992579
+      DantaFondo_00054_34: -4287149741970910385
+      DantaFondo_00054_35: 3100766847852221398
+      DantaFondo_00054_36: 7832519809782737802
+      DantaFondo_00054_37: 1193971021111512095
+      DantaFondo_00054_38: 5385540169080450360
+      DantaFondo_00054_39: 9025355256567514684
+      DantaFondo_00054_4: 3009210808706737194
+      DantaFondo_00054_40: -3985273637987915887
+      DantaFondo_00054_5: 7129883300389769620
+      DantaFondo_00054_6: -6579719680428410116
+      DantaFondo_00054_7: -2372203781678545257
+      DantaFondo_00054_8: -3859091636016756945
+      DantaFondo_00054_9: 2416317868618633058
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

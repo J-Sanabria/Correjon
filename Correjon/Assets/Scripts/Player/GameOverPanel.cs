@@ -66,8 +66,10 @@ public class GameOverPanel : MonoBehaviour
 
     public void Show()
     {
+        if (MusicManager.Instance != null)
+            MusicManager.Instance.FadeOutAndPause();
 
-        MusicManager.Instance.StopMusic();
+
 
         if (shown) return;
         shown = true;
@@ -112,6 +114,9 @@ public class GameOverPanel : MonoBehaviour
 
         if (runDistance != null)
             runDistance.ResetDistance();
+
+        if (MusicManager.Instance != null)
+            MusicManager.Instance.PlayGameplayMusic();
 
         // Recargar escena actual
         var current = SceneManager.GetActiveScene();

@@ -13,9 +13,11 @@ public class MusicManager : MonoBehaviour
 
     [Header("Transiciones")]
     public float fadeDuration = 1.5f;         // Duración del fade in/out
+    [Range(0f, 1f)]
     public float volume = 0.8f;               // Volumen base
 
-    private Coroutine transitionRoutine;
+    private Coroutine transitionRoutine;      // PlayGameplaySequence
+    private Coroutine fadeRoutine;            // Fades
     private bool isMuted;
 
     void Awake()
@@ -40,26 +42,79 @@ public class MusicManager : MonoBehaviour
     }
 
     // ==============================================================
-    // --- MÉTODOS DE CONTROL ---
-    // ==============================================================
 
     public void PlayMenuMusic()
     {
-        PlayMusic(menuTheme, loop: true);
+        if (transitionRoutine != null)
+        {
+            StopCoroutine(transitionRoutine);
+            transitionRoutine = null;
+        }
+
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+
+        transitionRoutine = StartCoroutine(PlaySingleClip(menuTheme, loop: true));
     }
 
     public void PlayGameplayMusic()
     {
         if (transitionRoutine != null)
+        {
             StopCoroutine(transitionRoutine);
+            transitionRoutine = null;
+        }
+
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
 
         transitionRoutine = StartCoroutine(PlayGameplaySequence());
     }
 
+    // Fade out y STOP total
     public void StopMusic()
     {
+        // IMPORTANTE: matar también la corrutina de transición
+        if (transitionRoutine != null)
+        {
+            StopCoroutine(transitionRoutine);
+            transitionRoutine = null;
+        }
+
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+
         if (musicSource.isPlaying)
-            StartCoroutine(FadeOutAndStop());
+            fadeRoutine = StartCoroutine(FadeOutAndStop());
+    }
+
+    // Fade out y PAUSE (para game over)
+    public void FadeOutAndPause()
+    {
+        // IMPORTANTE: matar también la corrutina de transición
+        if (transitionRoutine != null)
+        {
+            StopCoroutine(transitionRoutine);
+            transitionRoutine = null;
+        }
+
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+
+        if (musicSource.isPlaying)
+            fadeRoutine = StartCoroutine(FadeOutAndPauseRoutine());
     }
 
     public void SetMute(bool mute)
@@ -69,44 +124,61 @@ public class MusicManager : MonoBehaviour
     }
 
     // ==============================================================
-    // --- IMPLEMENTACIÓN INTERNA ---
-    // ==============================================================
 
-    private void PlayMusic(AudioClip clip, bool loop)
+    private IEnumerator PlaySingleClip(AudioClip clip, bool loop)
     {
-        if (!clip) return;
+        if (!clip) yield break;
+
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+
+        musicSource.Stop();
         musicSource.clip = clip;
         musicSource.loop = loop;
         musicSource.volume = 0f;
         musicSource.Play();
-        StartCoroutine(FadeIn());
+
+        fadeRoutine = StartCoroutine(FadeIn());
     }
 
     private IEnumerator PlayGameplaySequence()
     {
-        // 1. Reproduce intro lenta
+        if (fadeRoutine != null)
+        {
+            StopCoroutine(fadeRoutine);
+            fadeRoutine = null;
+        }
+
+        // 1. Intro
         if (gameplayIntro)
         {
+            musicSource.Stop();
             musicSource.clip = gameplayIntro;
             musicSource.loop = false;
             musicSource.volume = 0f;
             musicSource.Play();
+
             yield return StartCoroutine(FadeIn());
 
-            // Espera a que termine la canción lenta
+            // Esperar a que termine la intro (si aquí la pausas, isPlaying=false y esto terminaría)
             yield return new WaitWhile(() => musicSource.isPlaying);
         }
 
-        // 2. Transición a canción acelerada (loop)
+        // 2. Loop acelerado
         if (gameplayLoop)
         {
-            yield return StartCoroutine(FadeOutAndSwitch(gameplayLoop, loop: true));
-            yield return StartCoroutine(FadeIn());
+            musicSource.clip = gameplayLoop;
+            musicSource.loop = true;
+            musicSource.volume = volume;
+            musicSource.Play();
         }
+
+        transitionRoutine = null;
     }
 
-    // ==============================================================
-    // --- EFECTOS DE TRANSICIÓN ---
     // ==============================================================
 
     private IEnumerator FadeIn()
@@ -114,7 +186,7 @@ public class MusicManager : MonoBehaviour
         float t = 0f;
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             musicSource.volume = Mathf.Lerp(0f, volume, t / fadeDuration);
             yield return null;
         }
@@ -125,9 +197,10 @@ public class MusicManager : MonoBehaviour
     {
         float startVol = musicSource.volume;
         float t = 0f;
+
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             musicSource.volume = Mathf.Lerp(startVol, 0f, t / fadeDuration);
             yield return null;
         }
@@ -136,21 +209,19 @@ public class MusicManager : MonoBehaviour
         musicSource.volume = volume;
     }
 
-    private IEnumerator FadeOutAndSwitch(AudioClip next, bool loop)
+    private IEnumerator FadeOutAndPauseRoutine()
     {
         float startVol = musicSource.volume;
         float t = 0f;
+
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             musicSource.volume = Mathf.Lerp(startVol, 0f, t / fadeDuration);
             yield return null;
         }
 
-        musicSource.Stop();
-        musicSource.clip = next;
-        musicSource.loop = loop;
-        musicSource.volume = 0f;
-        musicSource.Play();
+        musicSource.Pause();
+        musicSource.volume = volume;
     }
 }
