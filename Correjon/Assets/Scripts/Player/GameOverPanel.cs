@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
@@ -9,6 +9,7 @@ public class GameOverPanel : MonoBehaviour
     public LivesSystem lives;
     public CurrencySystem currency;
     public RunDistance runDistance;
+    public JournalSystem journal; 
 
     [Header("UI")]
     public GameObject panelRoot;
@@ -20,7 +21,7 @@ public class GameOverPanel : MonoBehaviour
 
     [Header("Options")]
     public bool pauseOnShow = true;
-    [Tooltip("Nombre de la escena del menú principal")]
+    [Tooltip("Nombre de la escena del menÃº principal")]
     public string menuSceneName = "MainMenu";
 
     bool shown;
@@ -29,23 +30,30 @@ public class GameOverPanel : MonoBehaviour
     {
         if (!lives) lives = LivesSystem.Instance;
         if (!currency) currency = CurrencySystem.Instance;
+        if (!journal) journal = JournalSystem.Instance;
         if (panelRoot) panelRoot.SetActive(false);
     }
 
     void OnEnable()
     {
-        // Si usas el evento:
+        // Escuchar el evento de Game Over
         if (LivesSystem.Instance != null)
             LivesSystem.Instance.OnGameOver += Show;
 
-        // Si ya estabas en game over (por orden de inicialización), muéstrate
-        if (LivesSystem.Instance != null && LivesSystem.Instance.CurrentLives <= 0)
-            Show();
         // Asegurar listeners de botones
-        if (retryButton) { retryButton.onClick.RemoveAllListeners(); retryButton.onClick.AddListener(OnRetry); }
-        if (menuButton) { menuButton.onClick.RemoveAllListeners(); menuButton.onClick.AddListener(OnMenu); }
+        if (retryButton)
+        {
+            retryButton.onClick.RemoveAllListeners();
+            retryButton.onClick.AddListener(OnRetry);
+        }
 
-        // “Sticky”: si ya estabas en GameOver cuando este panel se habilita, muéstrate
+        if (menuButton)
+        {
+            menuButton.onClick.RemoveAllListeners();
+            menuButton.onClick.AddListener(OnMenu);
+        }
+
+        // Si ya estÃ¡s en GameOver por orden de inicializaciÃ³n
         if (LivesSystem.Instance != null && LivesSystem.Instance.CurrentLives <= 0 && !shown)
             Show();
     }
@@ -55,52 +63,70 @@ public class GameOverPanel : MonoBehaviour
         if (LivesSystem.Instance != null)
             LivesSystem.Instance.OnGameOver -= Show;
     }
+
     public void Show()
     {
+
+        MusicManager.Instance.StopMusic();
+
+        if (shown) return;
+        shown = true;
+
         if (panelRoot) panelRoot.SetActive(true);
 
+        // Captura monedas ganadas en la carrera
         var cur = CurrencySystem.Instance;
-        int runCoinsBefore = cur ? cur.RunCoins : 0;   // 1) captura
+        int runCoinsBefore = cur ? cur.RunCoins : 0;
+        cur?.BankRunCoinsOnce(); // suma al total
 
-        // 2) suma al total (esto deja RunCoins en 0)
-        cur?.BankRunCoinsOnce();
-
-        // 3) UI
+        // Actualizar UI
         if (runCoinsText) runCoinsText.text = $"Monedas carrera: {runCoinsBefore}";
         if (totalCoinsText) totalCoinsText.text = $"Monedas totales: {cur?.Wallet ?? 0}";
-
         if (distanceText && runDistance != null)
             distanceText.text = $"Distancia: {runDistance.Distance:0.0} m";
 
+        // Guardado final
+        SaveFinalProgress();
+
         if (pauseOnShow) Time.timeScale = 0f;
     }
-    public void OnRetry()
+
+    void SaveFinalProgress()
     {
-        // Quitar pausa
-        Time.timeScale = 1f;
+        if (currency != null)
+            SaveManager.Data.wallet = currency.Wallet;
 
-        // RESET de sistemas persistentes
-        if (LivesSystem.Instance != null)
-            LivesSystem.Instance.ResetLives();       // <-- vuelve a startLives y limpia flags
+        if (journal != null)
+            SaveManager.Data.journalLeaves = journal.TotalLeaves;
 
-        if (runDistance != null)
-            runDistance.ResetDistance();             // <-- si tu RunDistance persiste
-
-        // Recargar escena actual
-        var current = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-        UnityEngine.SceneManagement.SceneManager.LoadScene(current.buildIndex);
+        SaveManager.Save();
+        Debug.Log("[GameOverPanel] Progreso guardado");
     }
 
+    public void OnRetry()
+    {
+        Time.timeScale = 1f;
+
+        if (LivesSystem.Instance != null)
+            LivesSystem.Instance.ResetLives();
+
+        if (runDistance != null)
+            runDistance.ResetDistance();
+
+        // Recargar escena actual
+        var current = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(current.buildIndex);
+    }
 
     public void OnMenu()
     {
+        Time.timeScale = 1f;
         if (string.IsNullOrEmpty(menuSceneName))
         {
-            Debug.LogWarning("GameOverPanel: menuSceneName no está asignado.");
+            Debug.LogWarning("GameOverPanel: menuSceneName no estÃ¡ asignado.");
             return;
         }
 
-        Time.timeScale = 1f;
         SceneManager.LoadScene(menuSceneName);
     }
 }

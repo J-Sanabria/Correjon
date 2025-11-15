@@ -32,12 +32,16 @@ public class PlayerController : MonoBehaviour
     [Header("Distancia")]
     public RunDistance runDistance;
 
+    public Animator Personaje;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = runSpeed; // inicia en velocidad base
         if (runDistance != null)
             runDistance.SetSpeed(currentSpeed);
+        MusicManager.Instance.PlayGameplayMusic();
+
     }
 
     void Update()

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -51,8 +52,11 @@ TagManager:
   - name: BG_Front
     uniqueID: 959669927
     locked: 0
-  - name: Transition
+  - name: TransitionBG
     uniqueID: 1967208813
+    locked: 0
+  - name: TransitionFront
+    uniqueID: 2061519747
     locked: 0
   - name: Player
     uniqueID: 2029766229

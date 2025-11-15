@@ -3,27 +3,20 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class ParallaxScroller : MonoBehaviour
 {
-    [System.Serializable]
-    public class Biome
-    {
-        public Sprite sprite;          // imagen del bioma
-        public float changeAtDistance; // distancia (m) a partir de la cual usar este bioma
-    }
-
     [Header("Movimiento")]
-    public Transform target;                 // jugador o cámara
+    public Transform target; // jugador o cámara
     [Range(0f, 1f)] public float parallaxFactor = 0.5f;
 
-    [Header("Biomas (orden ascendente por distancia)")]
-    public Biome[] biomes;
+    [Header("Fondos / Biomas")]
+    public Sprite[] biomes; // tus 3 sprites (o más)
+    public float biomeChangeInterval = 100f; // cada cuántos metros cambia (ej. 50 o 100)
 
-    // internos
-    float textureUnitSizeX;
-    Vector3 lastTargetPosition;
-    float startX;
-    int currentBiomeIndex = -1;
-
-    SpriteRenderer rootSR;
+    // Internos
+    private float textureUnitSizeX;
+    private Vector3 lastTargetPosition;
+    private float startX;
+    private int currentBiomeIndex = -1;
+    private SpriteRenderer rootSR;
 
     void Start()
     {
@@ -36,68 +29,60 @@ public class ParallaxScroller : MonoBehaviour
         // Asegura clones y sprite inicial
         CreateOrRefreshCopies(rootSR);
 
-        // Forzar bioma inicial según distancia 0
-        UpdateBiomeByDistance(0f, force: true);
+        // Fondo inicial
+        ApplyBiome(0);
     }
 
     void Update()
     {
-        // Parallax
+        // Movimiento parallax
         Vector3 delta = target.position - lastTargetPosition;
         transform.position += new Vector3(delta.x * parallaxFactor, 0f, 0f);
         lastTargetPosition = target.position;
 
-        // Loop infinito
+        // Loop infinito de tiles
         if (Mathf.Abs(target.position.x - transform.position.x) >= textureUnitSizeX)
         {
             float offset = (target.position.x - transform.position.x) % textureUnitSizeX;
             transform.position = new Vector3(target.position.x + offset, transform.position.y, transform.position.z);
         }
 
-        // Cambio de bioma por distancia recorrida
+        // Calcular bioma actual en función de la distancia
         float dist = target.position.x - startX;
-        UpdateBiomeByDistance(dist, force: false);
-    }
 
-    // ----- Biomas -----
+        // Indice de bioma cíclico según intervalos
+        int newBiomeIndex = Mathf.FloorToInt(dist / biomeChangeInterval) % biomes.Length;
+        if (newBiomeIndex < 0) newBiomeIndex += biomes.Length; // por si retrocede
 
-    void UpdateBiomeByDistance(float distance, bool force)
-    {
-        if (biomes == null || biomes.Length == 0) return;
-
-        // Busca el bioma más alto cuyo changeAtDistance <= distance
-        int index = 0;
-        for (int i = 0; i < biomes.Length; i++)
+        if (newBiomeIndex != currentBiomeIndex)
         {
-            if (distance >= biomes[i].changeAtDistance) index = i;
-            else break;
-        }
-
-        if (index != currentBiomeIndex || force)
-        {
-            ApplyBiome(index);
+            ApplyBiome(newBiomeIndex);
         }
     }
+
+    // ------------------------------------------------------------
+    // Cambio de bioma
+    // ------------------------------------------------------------
 
     void ApplyBiome(int index)
     {
+        if (biomes == null || biomes.Length == 0) return;
+
         currentBiomeIndex = Mathf.Clamp(index, 0, biomes.Length - 1);
-        var b = biomes[currentBiomeIndex];
-        if (!b.sprite) return;
+        Sprite newSprite = biomes[currentBiomeIndex];
+        if (!newSprite) return;
 
-        // Cambia el sprite en root y clones
-        SetSpriteForAll(b.sprite);
-
-        // Recalcula ancho y reubica clones
-        RecalculateWidthFromSprite(b.sprite);
+        SetSpriteForAll(newSprite);
+        RecalculateWidthFromSprite(newSprite);
         PositionCopies();
     }
 
-    // ----- Tiles/copias -----
+    // ------------------------------------------------------------
+    // Clonación y loop
+    // ------------------------------------------------------------
 
     void CreateOrRefreshCopies(SpriteRenderer sr)
     {
-        // Si no hay clones, créalos (uno a la izq y otro a la der)
         if (transform.childCount == 0)
         {
             for (int i = -1; i <= 1; i++)
@@ -113,17 +98,13 @@ public class ParallaxScroller : MonoBehaviour
             }
         }
 
-        // Calcular ancho y posicionar
         RecalculateWidthFromSprite(sr.sprite);
         PositionCopies();
     }
 
     void SetSpriteForAll(Sprite s)
     {
-        // Root
         if (rootSR) rootSR.sprite = s;
-
-        // Clones
         for (int i = 0; i < transform.childCount; i++)
         {
             var csr = transform.GetChild(i).GetComponent<SpriteRenderer>();
@@ -142,23 +123,8 @@ public class ParallaxScroller : MonoBehaviour
 
     void PositionCopies()
     {
-        // Coloca clones exactamente a un ancho a cada lado
-        // Asume 2 hijos: L y R (en cualquier orden)
         if (transform.childCount == 0) return;
 
-        // Busca o crea dos posiciones
-        int count = Mathf.Min(transform.childCount, 2);
-        if (count == 1)
-        {
-            // Crea otro si solo hay uno por algún motivo
-            var extra = new GameObject($"{name}_clone_extra");
-            extra.transform.SetParent(transform);
-            extra.AddComponent<SpriteRenderer>();
-            count = 2;
-        }
-
-        // Ordenar por nombre para consistencia (opcional)
-        // y posicionar -width y +width
         int placed = 0;
         for (int i = 0; i < transform.childCount && placed < 2; i++)
         {
@@ -167,10 +133,6 @@ public class ParallaxScroller : MonoBehaviour
             t.position = new Vector3(transform.position.x + offset, transform.position.y, transform.position.z);
             placed++;
         }
-
-
     }
 
-
 }
-

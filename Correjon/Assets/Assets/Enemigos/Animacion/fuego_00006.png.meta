@@ -3,8 +3,8 @@ guid: 74006d1dc993b7d4d990a6bb5a6a4b90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5422199082881873617
-    second: fuego_00006_0
+      213: 1028140901831991043
+    second: Fuego_00006_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fuego_00006_0
+      name: Fuego_00006_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 496
-        height: 500
+        x: 34
+        y: 21
+        width: 418
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f29806389aa70c4b0800000000000000
-      internalID: -5422199082881873617
+      spriteID: 30fdeb0f3b0b44e00800000000000000
+      internalID: 1028140901831991043
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fuego_00006_0: -5422199082881873617
+      Fuego_00006_0: 1028140901831991043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager2D : MonoBehaviour
 {
-    public enum SpawnKind { Hazard, Coin, Heal }
+    public enum SpawnKind { Hazard, Coin, Heal, Leaf, Powerup }
 
     [Serializable]
     public class SpawnRule
@@ -62,6 +62,8 @@ public class SpawnManager2D : MonoBehaviour
 
     private readonly List<Booking> bookings = new List<Booking>();
     private float startX; // X inicial para medir distancia recorrida
+
+
 
     void Start()
     {
@@ -172,6 +174,7 @@ public class SpawnManager2D : MonoBehaviour
                 break;
             }
         }
+
 
         // 5) programar el siguiente punto de spawn en metros (densidad escala con distancia)
         float nextSpacing = SampleSpacingMeters(rule, playerX);
@@ -286,4 +289,76 @@ public class SpawnManager2D : MonoBehaviour
         }
         return foundAhead;
     }
+
+    private Dictionary<int, (float, float, float, float)> originalSpacings = new();
+
+    public void BoostSpawnRates(float multiplier)
+    {
+        if (rules == null || rules.Count == 0) return;
+        originalSpacings.Clear();
+
+        float playerX = target ? target.position.x : 0f;
+        bool anyAffected = false;
+
+        for (int i = 0; i < rules.Count; i++)
+        {
+            var r = rules[i];
+
+            // Solo monedas y hojas
+            if (r.kind == SpawnKind.Coin || r.kind == SpawnKind.Leaf)
+            {
+                anyAffected = true;
+
+                // Guardamos valores originales
+                originalSpacings[i] = (r.spacingMinStart, r.spacingMaxStart, r.spacingMinEnd, r.spacingMaxEnd);
+
+                // Reducimos espaciado (más frecuencia)
+                r.spacingMinStart *= multiplier;
+                r.spacingMaxStart *= multiplier;
+                r.spacingMinEnd *= multiplier;
+                r.spacingMaxEnd *= multiplier;
+
+                // Reprogramar el siguiente spawn para que no quede lejísimos
+                float newSpacing = SampleSpacingMeters(r, playerX);
+                // Que el próximo spawn no esté más lejos de lo que dice el nuevo rango
+                r.nextSpawnAtX = Mathf.Min(r.nextSpawnAtX, playerX + newSpacing);
+
+                rules[i] = r;
+
+                Debug.Log($"[Venado] Regla {i} ({r.kind}) boosteada. Nuevo rango start: {r.spacingMinStart:F1}-{r.spacingMaxStart:F1}");
+            }
+        }
+
+        if (!anyAffected)
+        {
+            Debug.LogWarning("[Venado] BoostSpawnRates no encontró ninguna regla Coin/Leaf. Revisa el enum SpawnKind en el inspector.");
+        }
+        else
+        {
+            Debug.Log($"[Venado] Activado, multiplicador de aparición {multiplier}");
+        }
+    }
+
+
+    public void RestoreSpawnRates()
+    {
+        foreach (var kv in originalSpacings)
+        {
+            int i = kv.Key;
+            var orig = kv.Value;
+            if (i >= 0 && i < rules.Count)
+            {
+                var r = rules[i];
+                r.spacingMinStart = orig.Item1;
+                r.spacingMaxStart = orig.Item2;
+                r.spacingMinEnd = orig.Item3;
+                r.spacingMaxEnd = orig.Item4;
+                rules[i] = r;
+            }
+        }
+
+        originalSpacings.Clear();
+        Debug.Log("Venado terminó  tasas de aparición restauradas");
+    }
+
 }

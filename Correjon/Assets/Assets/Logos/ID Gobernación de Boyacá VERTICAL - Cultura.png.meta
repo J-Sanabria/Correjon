@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: a0008b054b9a8aa43950f787d321c15b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8612687679278303460
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_0"
+  - first:
+      213: 6112410265080981732
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_1"
+  - first:
+      213: -7344492499482252789
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_2"
+  - first:
+      213: 5186348287859719649
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_3"
+  - first:
+      213: 5748196470310087745
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_4"
+  - first:
+      213: -8206553786106467434
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_5"
+  - first:
+      213: -6089898055528426253
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_6"
+  - first:
+      213: 6540296102908108637
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_7"
+  - first:
+      213: -2086989004959772766
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_8"
+  - first:
+      213: -76869375741953816
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_9"
+  - first:
+      213: 1452144099194749911
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_10"
+  - first:
+      213: -8993479508714730466
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_11"
+  - first:
+      213: -1700683380355058080
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_12"
+  - first:
+      213: 9150117157415491434
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_13"
+  - first:
+      213: 5388904683769889160
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_14"
+  - first:
+      213: -907417713018782453
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_15"
+  - first:
+      213: 6137214112167695302
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_16"
+  - first:
+      213: -1392929744901489984
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_17"
+  - first:
+      213: -7919200789323024078
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_18"
+  - first:
+      213: -610595290917673876
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_19"
+  - first:
+      213: 7089429687022620433
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_20"
+  - first:
+      213: 8604326246304779540
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_21"
+  - first:
+      213: -30434814655289631
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_22"
+  - first:
+      213: -2969185497674212864
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_23"
+  - first:
+      213: 4378215753860902042
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_24"
+  - first:
+      213: -2523979794297032391
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_25"
+  - first:
+      213: 770324545796640655
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_26"
+  - first:
+      213: 1449463773300944067
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_27"
+  - first:
+      213: 464351501608111577
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_28"
+  - first:
+      213: 5704762546591611785
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_29"
+  - first:
+      213: -908193112972256020
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_30"
+  - first:
+      213: -1475784348656736489
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_31"
+  - first:
+      213: -4929138071951451096
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_32"
+  - first:
+      213: 4181295995883107826
+    second: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_33"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1921
+        height: 1081
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17bb3b0036997880800000000000000
+      internalID: -8612687679278303460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_1"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 531
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e86a9b40c4a3d450800000000000000
+      internalID: 6112410265080981732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_2"
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 531
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ae6d80cfe131a90800000000000000
+      internalID: -7344492499482252789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_3"
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 564
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed75531a4c99f740800000000000000
+      internalID: 5186348287859719649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_4"
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 563
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cacf70c32b5cf40800000000000000
+      internalID: 5748196470310087745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_5"
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 531
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bacfccfc67c1e80800000000000000
+      internalID: -8206553786106467434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_6"
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 381
+        width: 138
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4d2e1fbf55c7ba0800000000000000
+      internalID: -6089898055528426253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_7"
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 531
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f95b357acc3ca50800000000000000
+      internalID: 6540296102908108637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_8"
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 531
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af0a3dae868903e0800000000000000
+      internalID: -2086989004959772766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_9"
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 531
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e87bc4c5b7eeeef0800000000000000
+      internalID: -76869375741953816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_10"
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 531
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3ce2b4d5d072410800000000000000
+      internalID: 1452144099194749911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_11"
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 531
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ccd4c490eb03380800000000000000
+      internalID: -8993479508714730466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_12"
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 531
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066b686e975f568e0800000000000000
+      internalID: -1700683380355058080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_13"
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 531
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6715f4431fbbfe70800000000000000
+      internalID: 9150117157415491434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_14"
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 531
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8810b8c124c39ca40800000000000000
+      internalID: 5388904683769889160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_15"
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 531
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d3e90d5643863f0800000000000000
+      internalID: -907417713018782453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_16"
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 531
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3154af7b3cb2550800000000000000
+      internalID: 6137214112167695302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_17"
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 510
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca321ee6c15bace0800000000000000
+      internalID: -1392929744901489984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_18"
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 497
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239786ff6d8591290800000000000000
+      internalID: -7919200789323024078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_19"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 382
+        width: 108
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64635761dab687f0800000000000000
+      internalID: -610595290917673876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_20"
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 332
+        width: 110
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f871b2db6b26260800000000000000
+      internalID: 7089429687022620433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_21"
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 382
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d01922225b86770800000000000000
+      internalID: 8604326246304779540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_22"
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 382
+        width: 97
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6aaa382bfd39ff0800000000000000
+      internalID: -30434814655289631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_23"
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 381
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a13e275855bc6d0800000000000000
+      internalID: -2969185497674212864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_24"
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 274
+        width: 73
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ce5e6080c82cc30800000000000000
+      internalID: 4378215753860902042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_25"
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 274
+        width: 107
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93179acefb509fcd0800000000000000
+      internalID: -2523979794297032391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_26"
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 274
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f09f1d71eb0ba00800000000000000
+      internalID: 770324545796640655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_27"
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 134
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc666a4f978d1410800000000000000
+      internalID: 1449463773300944067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_28"
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 134
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd45400b35b17600800000000000000
+      internalID: 464351501608111577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_29"
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 134
+        width: 33
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bbb8d9f436b2f40800000000000000
+      internalID: 5704762546591611785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_30"
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 134
+        width: 51
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec15d1fc237563f0800000000000000
+      internalID: -908193112972256020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_31"
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 134
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717eb3534f5f48be0800000000000000
+      internalID: -1475784348656736489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_32"
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 135
+        width: 42
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cda7c0a0f289bb0800000000000000
+      internalID: -4929138071951451096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_33"
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 134
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f530670e82f60a30800000000000000
+      internalID: 4181295995883107826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 622c0cb7b63bba5438e39450066013ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_0": -8612687679278303460
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_1": 6112410265080981732
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_10": 1452144099194749911
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_11": -8993479508714730466
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_12": -1700683380355058080
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_13": 9150117157415491434
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_14": 5388904683769889160
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_15": -907417713018782453
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_16": 6137214112167695302
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_17": -1392929744901489984
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_18": -7919200789323024078
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_19": -610595290917673876
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_2": -7344492499482252789
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_20": 7089429687022620433
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_21": 8604326246304779540
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_22": -30434814655289631
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_23": -2969185497674212864
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_24": 4378215753860902042
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_25": -2523979794297032391
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_26": 770324545796640655
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_27": 1449463773300944067
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_28": 464351501608111577
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_29": 5704762546591611785
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_3": 5186348287859719649
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_30": -908193112972256020
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_31": -1475784348656736489
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_32": -4929138071951451096
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_33": 4181295995883107826
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_4": 5748196470310087745
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_5": -8206553786106467434
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_6": -6089898055528426253
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_7": 6540296102908108637
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_8": -2086989004959772766
+      "ID Gobernaci\xF3n de Boyac\xE1 VERTICAL - Cultura_9": -76869375741953816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

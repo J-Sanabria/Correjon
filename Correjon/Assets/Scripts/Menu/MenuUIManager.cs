@@ -10,15 +10,11 @@ public class MenuUIManager : MonoBehaviour
     [SerializeField] GameObject panelOpciones;      // Opciones (audio/video)
     [SerializeField] GameObject panelSalir;         // Confirmación salir
 
-    [Header("Panels Options")]
-    [SerializeField] GameObject OP_Video;
-    [SerializeField] GameObject OP_Audio;
-
     [Header("Escena de Juego")]
     [SerializeField] string gameplaySceneName = "Game";
-
     void Start()
     {
+        MusicManager.Instance.PlayMenuMusic();
         ShowOnly(panelMenu);
     }
 
@@ -45,12 +41,6 @@ public class MenuUIManager : MonoBehaviour
         target.SetActive(true);
     }
 
-    void ShowOnlyOption(GameObject target)
-    {
-        OP_Video.SetActive(false);
-        OP_Audio.SetActive(false);
-        target.SetActive(true);
-    }
 
     // === Botones del menú principal ===
     public void OnPlay()
@@ -61,15 +51,9 @@ public class MenuUIManager : MonoBehaviour
 
     public void OnOpenDiario() => ShowOnly(panelDiario);
     public void OnOpenTienda() => ShowOnly(panelTienda);
-    public void OnOpenOpciones() {
-        ShowOnly(panelOpciones);
-        ShowOnlyOption(OP_Video);
-    }  
+
     public void OnOpenSalir() => ShowOnly(panelSalir);
-
-    public void OnOpenVideo() => ShowOnlyOption(OP_Video);
-    public void OnOpenAudio() => ShowOnlyOption(OP_Audio);
-
+    public void OnOpenOptions() => ShowOnly(panelOpciones);
     // === Botones comunes de "Volver" ===+
     public void OnBackToMenu() => ShowOnly(panelMenu);
 
@@ -84,4 +68,5 @@ public class MenuUIManager : MonoBehaviour
 #endif
     }
     public void OnConfirmExitNo() => ShowOnly(panelMenu);
+
 }

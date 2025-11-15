@@ -38,6 +38,11 @@ public class RunDistance : MonoBehaviour
         OnDistanceChanged.Invoke(Distance);
     }
 
+    public float GetSpeed()
+    {
+        return speed;
+    }
+
     // Permite actualizar velocidad desde PlayerController
     public void SetSpeed(float newSpeed) => speed = newSpeed;
 }

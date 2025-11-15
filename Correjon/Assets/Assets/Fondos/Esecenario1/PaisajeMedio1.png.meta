@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 02175c6b75717264e8df25e639af3ae4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3108260006707042129
+    second: PaisajeMedio1_0
+  - first:
+      213: -1229187324768713874
+    second: PaisajeMedio1_1
+  - first:
+      213: -6147761298827566716
+    second: PaisajeMedio1_2
+  - first:
+      213: -992531044680873410
+    second: PaisajeMedio1_3
+  - first:
+      213: 749653297414291211
+    second: PaisajeMedio1_4
+  - first:
+      213: -3364903012809970439
+    second: PaisajeMedio1_5
+  - first:
+      213: 5303848014693407092
+    second: PaisajeMedio1_6
+  - first:
+      213: 323925741598112672
+    second: PaisajeMedio1_7
+  - first:
+      213: -2204041516392036946
+    second: PaisajeMedio1_8
+  - first:
+      213: -2359514594769565093
+    second: PaisajeMedio1_9
+  - first:
+      213: -2249406890334183435
+    second: PaisajeMedio1_10
+  - first:
+      213: 16009813080756634
+    second: PaisajeMedio1_11
+  - first:
+      213: 8426816824733776847
+    second: PaisajeMedio1_12
+  - first:
+      213: 7858394240520857529
+    second: PaisajeMedio1_13
+  - first:
+      213: 7379275797166319337
+    second: PaisajeMedio1_14
+  - first:
+      213: -3487597181242604924
+    second: PaisajeMedio1_15
+  - first:
+      213: 4110568121352323571
+    second: PaisajeMedio1_16
+  - first:
+      213: 7735956013242399315
+    second: PaisajeMedio1_17
+  - first:
+      213: 1539598590906748229
+    second: PaisajeMedio1_18
+  - first:
+      213: -3591445665233187493
+    second: PaisajeMedio1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PaisajeMedio1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15793510202c22b20800000000000000
+      internalID: 3108260006707042129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_1
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 758
+        width: 400
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e638fb004ac01fee0800000000000000
+      internalID: -1229187324768713874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_2
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 738
+        width: 656
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4812d73cba3ceaaa0800000000000000
+      internalID: -6147761298827566716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_3
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 895
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3acf350642d932f0800000000000000
+      internalID: -992531044680873410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_4
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 645
+        width: 614
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f3411c3bd476a00800000000000000
+      internalID: 749653297414291211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_5
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 855
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fce1d1b9867d41d0800000000000000
+      internalID: -3364903012809970439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_6
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 862
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479167a1bad0b9940800000000000000
+      internalID: 5303848014693407092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_7
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 822
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab7f89eeb0de7400800000000000000
+      internalID: 323925741598112672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_8
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 504
+        width: 460
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea54d391beba961e0800000000000000
+      internalID: -2204041516392036946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_9
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 720
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a09603af1514fd0800000000000000
+      internalID: -2359514594769565093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 353
+        width: 1099
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff9052e95088c0e0800000000000000
+      internalID: -2249406890334183435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_11
+      rect:
+        serializedVersion: 2
+        x: 3245
+        y: 645
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91599517d0e83000800000000000000
+      internalID: 16009813080756634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_12
+      rect:
+        serializedVersion: 2
+        x: 3327
+        y: 642
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbba81414112f470800000000000000
+      internalID: 8426816824733776847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_13
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 634
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7a83b1def9e0d60800000000000000
+      internalID: 7858394240520857529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_14
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 623
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e66cbd8d34786660800000000000000
+      internalID: 7379275797166319337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_15
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 613
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482816c77d0999fc0800000000000000
+      internalID: -3487597181242604924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_16
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 610
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1004a7debab0930800000000000000
+      internalID: 4110568121352323571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_17
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 295
+        width: 114
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a3c57d103ab5b60800000000000000
+      internalID: 7735956013242399315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_18
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 376
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d40b3e2c0cd5510800000000000000
+      internalID: 1539598590906748229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PaisajeMedio1_19
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 340
+        width: 514
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dc8ad123f982ec0800000000000000
+      internalID: -3591445665233187493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21a265aa8ea401d4e943a22a56165693
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PaisajeMedio1_0: 3108260006707042129
+      PaisajeMedio1_1: -1229187324768713874
+      PaisajeMedio1_10: -2249406890334183435
+      PaisajeMedio1_11: 16009813080756634
+      PaisajeMedio1_12: 8426816824733776847
+      PaisajeMedio1_13: 7858394240520857529
+      PaisajeMedio1_14: 7379275797166319337
+      PaisajeMedio1_15: -3487597181242604924
+      PaisajeMedio1_16: 4110568121352323571
+      PaisajeMedio1_17: 7735956013242399315
+      PaisajeMedio1_18: 1539598590906748229
+      PaisajeMedio1_19: -3591445665233187493
+      PaisajeMedio1_2: -6147761298827566716
+      PaisajeMedio1_3: -992531044680873410
+      PaisajeMedio1_4: 749653297414291211
+      PaisajeMedio1_5: -3364903012809970439
+      PaisajeMedio1_6: 5303848014693407092
+      PaisajeMedio1_7: 323925741598112672
+      PaisajeMedio1_8: -2204041516392036946
+      PaisajeMedio1_9: -2359514594769565093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

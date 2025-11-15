@@ -14,6 +14,11 @@ public class LivesSystem : MonoBehaviour
     [SerializeField] bool persistAcrossScenes = true;
     [SerializeField] float invulnerabilitySeconds = 1.0f;
 
+    [Header("Danta Power (invulnerabilidad extendida)")]
+    [SerializeField] int dantaMaxHits = 3;
+    int dantaHitsRemaining = 0;
+
+    public bool DantaActive => dantaHitsRemaining > 0;
     public int MaxLives => maxLives;
     public int CurrentLives { get; private set; }
     public bool IsInvulnerable { get; private set; }
@@ -51,12 +56,25 @@ public class LivesSystem : MonoBehaviour
         CurrentLives = Mathf.Clamp(CurrentLives + amount, 0, MaxLives);
         OnLivesChanged.Invoke(CurrentLives, MaxLives);
     }
-
     public void LoseLife(int amount = 1)
     {
         if (amount <= 0 || gameOverFired) return;
         if (IsInvulnerable) return;
 
+        // Protección Danta
+        if (dantaHitsRemaining > 0)
+        {
+            dantaHitsRemaining -= amount;
+            Debug.Log($"Danta absorbió un golpe. Restantes: {dantaHitsRemaining}");
+            if (dantaHitsRemaining <= 0)
+            {
+                OnInvulnerabilityChanged.Invoke(false);
+                Debug.Log("Danta terminó.");
+            }
+            return; // no se pierde vida
+        }
+
+        // Lógica normal
         CurrentLives = Mathf.Max(0, CurrentLives - amount);
         OnLivesChanged.Invoke(CurrentLives, MaxLives);
 
@@ -93,5 +111,25 @@ public class LivesSystem : MonoBehaviour
         while (t < sec) { t += Time.unscaledDeltaTime; yield return null; }
         IsInvulnerable = false;
         OnInvulnerabilityChanged.Invoke(false);
+    }
+
+    // Activa la protección de Danta (desde PowerupSystem)
+    public void ActivateDantaProtection()
+    {
+        dantaHitsRemaining = dantaMaxHits;
+        IsInvulnerable = false; // usa el contador, no el flag
+        OnInvulnerabilityChanged.Invoke(true);
+        Debug.Log($"Danta activada: {dantaHitsRemaining} golpes protegidos.");
+    }
+
+    public void ForceGameOver()
+    {
+        if (gameOverFired) return;
+
+        CurrentLives = 0;
+        gameOverFired = true;
+
+        Debug.Log("Game Over forzado manualmente.");
+        OnGameOver?.Invoke();
     }
 }
